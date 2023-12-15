@@ -1,6 +1,6 @@
 #second
     padding: 50px 0
-    .box
+    .minibox
         font-size: 18px
         color: #f1fbff
         padding: 15px 0
@@ -14,9 +14,19 @@
             background-color: #444152
             cursor: pointer
     @media (max-width: 800px)
-        .box
+        .minibox
             height: 50px
             width: 100px
             border: none
-            border-radius: 3%
+            border-radius: 5%
             background-color: #7485bf
+    @media (max-width: 768px)
+        .box
+            flex-direction: column
+            align-items: center
+    @media (max-width: 500px)
+        .minibox
+            font-size: 8px
+            height: 40px
+            width: 40px
+            background-color: #3b1e2b

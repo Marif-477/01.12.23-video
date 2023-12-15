@@ -46,7 +46,7 @@ a:hover {
 #second {
   padding: 50px 0;
 }
-#second .box {
+#second .minibox {
   font-size: 18px;
   color: #f1fbff;
   padding: 15px 0;
@@ -57,17 +57,31 @@ a:hover {
   border-width: 4px;
   transition: 2s;
 }
-#second .box:hover {
+#second .minibox:hover {
   background-color: #444152;
   cursor: pointer;
 }
 @media (max-width: 800px) {
-  #second .box {
+  #second .minibox {
     height: 50px;
     width: 100px;
     border: none;
-    border-radius: 3%;
+    border-radius: 5%;
     background-color: #7485bf;
+  }
+}
+@media (max-width: 768px) {
+  #second .box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  #second .minibox {
+    font-size: 8px;
+    height: 40px;
+    width: 40px;
+    background-color: #3b1e2b;
   }
 }
 
@@ -93,4 +107,30 @@ a:hover {
     width: 50px;
     background-color: #c3c587;
   }
+}
+@media (max-width: 768px) {
+  #third .box {
+    flex-direction: column;
+  }
+  #third .minibox {
+    height: 50px;
+    width: 50px;
+    background-color: #c3c587;
+  }
+}
+
+#fourth .box {
+  font-size: 24px;
+  color: #ffffff;
+  height: 200px;
+  width: 300px;
+  background-color: #476a8b;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fourth .primary {
+  position: absolute;
+  left: 413px;
 }/*# sourceMappingURL=style.css.map */
