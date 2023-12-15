@@ -49,4 +49,21 @@ a:hover {
 #second .box:hover {
   background-color: #444152;
   cursor: pointer;
+}
+
+#third {
+  padding: 50px 0;
+}
+#third .box {
+  height: 200px;
+  width: 200px;
+  background-color: #966d49;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fffdf1;
+  transition: 1s;
+}
+#third .box:hover {
+  border-radius: 20%;
 }/*# sourceMappingURL=style.css.map */
