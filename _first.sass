@@ -1,17 +1,25 @@
 #first
     padding: 50px 0
-    .box
-        height: 200px
-        width: 200px
-        background-color: #5183a7
-        .minibox
-            font-size: 18px 
-            font-weight: 700
-            color: #ffffff
-            height: 100px
-            width: 100px
-            background-color: #345880
-            transition: 1s
-            &:hover
-                height: 150px
-                width: 150px
+    .firstbox
+        display: flex
+        justify-content: space-around
+        .box
+            height: 200px
+            width: 200px
+            background-color: #5183a7
+            .minibox
+                font-size: 18px
+                font-weight: 700
+                color: #ffffff
+                height: 100px
+                width: 100px
+                background-color: #345880
+                transition: 1s
+                &:hover
+                    height: 150px
+                    width: 150px
+    @media (max-width: 768px)
+        .firstbox
+            flex-direction: column
+            align-items: center
+            justify-content: center

@@ -13,12 +13,16 @@ a:hover {
 #first {
   padding: 50px 0;
 }
-#first .box {
+#first .firstbox {
+  display: flex;
+  justify-content: space-around;
+}
+#first .firstbox .box {
   height: 200px;
   width: 200px;
   background-color: #5183a7;
 }
-#first .box .minibox {
+#first .firstbox .box .minibox {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -27,9 +31,16 @@ a:hover {
   background-color: #345880;
   transition: 1s;
 }
-#first .box .minibox:hover {
+#first .firstbox .box .minibox:hover {
   height: 150px;
   width: 150px;
+}
+@media (max-width: 768px) {
+  #first .firstbox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 #second {
@@ -50,11 +61,20 @@ a:hover {
   background-color: #444152;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  #second .box {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 3%;
+    background-color: #7485bf;
+  }
+}
 
 #third {
   padding: 50px 0;
 }
-#third .box {
+#third .minibox {
   height: 200px;
   width: 200px;
   background-color: #966d49;
@@ -64,6 +84,13 @@ a:hover {
   color: #fffdf1;
   transition: 1s;
 }
-#third .box:hover {
+#third .minibox:hover {
   border-radius: 20%;
+}
+@media (max-width: 800px) {
+  #third .minibox {
+    height: 50px;
+    width: 50px;
+    background-color: #c3c587;
+  }
 }/*# sourceMappingURL=style.css.map */
